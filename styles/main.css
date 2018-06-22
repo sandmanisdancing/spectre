@@ -1,0 +1,31 @@
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(0);
+    }
+    100% {
+        filter: hue-rotate(1turn);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+figure {
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+}
+
+figure {
+    max-width: 650px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    animation: rotate linear alternate-reverse infinite 8s;
+}
